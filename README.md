@@ -6,6 +6,9 @@
 * mpu6050 module
 * neo6-m GPS module
 
+# Parts Connection
+
+
 # Raspberry Pi setup commands
 - OS-update
     $ sudo apt-get update
