@@ -1,10 +1,10 @@
 # CanSat-software README.md
 
 # Needed Parts
-・Raspberry Pi 3 B
-・BME280 module
-・mpu6050 module
-・neo6-m GPS module
+* Raspberry Pi 3 B
+* BME280 module
+* mpu6050 module
+* neo6-m GPS module
 
 # Raspberry Pi setup commands
 - OS-update
