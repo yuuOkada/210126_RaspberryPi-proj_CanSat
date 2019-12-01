@@ -29,9 +29,9 @@
     ...
     sudo apt-get install git gcc make openssl python3-dev
     sudo apt-get install libssl-dev libbz2-dev libreadline-dev libsqlite3-dev
-    sudo apt-get install tk-dev python-tk libfreetype6-dev 
+    sudo apt-get install tk-dev python-tk libfreetype6-dev
     sudo apt-get install pkg-config libjpeg8-dev libpng12-dev
-    sudo apt-get install python3-numpy python3-scipy python3-matplotlib python3-h5py 
+    sudo apt-get install python3-numpy python3-scipy python3-matplotlib python3-h5py
     sudo apt-get install build-essential tk-dev libncurses5-dev libncursesw5-dev libreadline6-dev libdb5.3-dev libgdbm-dev libsqlite3-dev libssl-dev libbz2-dev libexpat1-dev liblzma-dev zlib1g-dev libffi-dev libc6-dev
     ...
 ```
