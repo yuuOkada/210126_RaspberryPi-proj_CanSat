@@ -8,8 +8,6 @@
 * neo6-m GPS module
 * Moter Driver TB6612FNG
 
-* * *
-
 ## Parts Connection
 
 * BME280 module
@@ -34,7 +32,6 @@
 
 * Moter Driver TB6612FNG
 
-* * *
 
 ## Raspberry Pi setup commands
 
