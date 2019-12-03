@@ -6,8 +6,35 @@
 * BME280 module
 * mpu6050 module
 * neo6-m GPS module
+* Moter Driver TB6612FNG
+
+* * *
 
 ## Parts Connection
+
+* BME280 module
+  * BME280 3.3V - RaspberryPi 3.3V(17 Pin)
+  * BME280 GND - RaspberryPi Ground
+  * BME280 CSB - (None)
+  * BME280 SDI - RaspberryPi SDA1/GIPO2
+  * BME280 SDO - RaspberryPi Ground
+  * BME280 SCK - RaspberryPi SCL1/GIPO3
+
+* mpu6050 module
+  * MPU6050 VCC - RaspberryPi 3.3V
+  * MPU6050 GND - RaspberryPi Ground
+  * MPU6050 SCL - RaspberryPi SCL1/GIPO3
+  * MPU6050 SDA - RaspberryPi SDA1/GIPO2
+
+* neo6-m GPS module
+  * NEO6M VCC - RaspberryPi 3.3V
+  * NEO6M TXD - RaspberryPi RXD0/GPIO15
+  * NEO6M RXD - RaspberryPi TXD0/GPIO14
+  * NEO6M GND - RaspberryPi Ground
+
+* Moter Driver TB6612FNG
+
+* * *
 
 ## Raspberry Pi setup commands
 
@@ -116,3 +143,5 @@
     sudo apt-get install ntp
     ...
 ```
+
+* * *
