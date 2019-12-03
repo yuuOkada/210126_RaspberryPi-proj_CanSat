@@ -32,7 +32,6 @@
 
 * Moter Driver TB6612FNG
 
-
 ## Raspberry Pi setup commands
 
 * OS-update
