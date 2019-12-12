@@ -31,6 +31,16 @@
   * NEO6M GND - RaspberryPi Ground
 
 * Moter Driver TB6612FNG
+  * TB6612FNG PWMA - RaspberryPi GIPO21
+  * TB6612FNG Ain1 - RaspberryPi GIPO16
+  * TB6612FNG Ain2 - RaspberryPi GIPO20
+  * TB6612FNG PWMB - RaspberryPi GIPO6
+  * TB6612FNG Bin1 - RaspberryPi GIPO19
+  * TB6612FNG Bin2 - RaspberryPi GIPO13
+  * TB6612FNG STBY - RaspberryPi GIPO26
+  * TB6612FNG GND - RaspberryPi Ground
+  * TB6612FNG VM - Battery +
+  * Battery- - RaspberryPi Ground
 
 ## Raspberry Pi setup commands
 
