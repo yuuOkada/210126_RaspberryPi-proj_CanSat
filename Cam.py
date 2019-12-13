@@ -37,6 +37,7 @@ while loop_counter < 5:
             if not os.path.exists('./fetchedData/'+ str(sphere_index)):
                 os.mkdir("./fetchedData/" + str(sphere_index))
 
+            #sphere_list.appendの引数が間違ってる??
             sphere_list.append(rotated_img[vartical_num:vartical_num+99, horizontal_num:horizontal_num+99])
             cv2.imwrite("./fetchedData/" + str(sphere_index) + "/" + filename, sphere_list[sphere_index])
 
