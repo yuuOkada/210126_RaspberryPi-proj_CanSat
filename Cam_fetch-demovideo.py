@@ -1,5 +1,6 @@
 import time
 import picamera
+import numpy as np
 import os
 import cv2
 
