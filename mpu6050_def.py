@@ -160,7 +160,8 @@ def readData():
 #    print 'z: %08.3f' % gyro_z,
 #    print '||',
     # 加速度 小数点以下第3位まで表示.
-    accel_x,accel_y,accel_z = get_accel_data_g()
+    gravity_x,gravity_y,gravity_z = get_accel_data_g()
+    accel_x,accel_y,accel_z = gravity_x*9.81, gravity_y*9.81, gravity_z*9.81
 #    print 'accel[g]',
 #    print 'x: %06.3f' % accel_x,
 #    print 'y: %06.3f' % accel_y,
@@ -168,7 +169,7 @@ def readData():
 #    print '||'
 
 #   傾き from 加速度(3axis)
-    theta,psi,phi = calc_slope_for_accel_3axis_deg(accel_x,accel_y,accel_z)
+    theta,psi,phi = calc_slope_for_accel_3axis_deg(gravity_x,gravity_y,gravity_z)
 #    print 'θ=%06.3f' % theta,
 #    print 'Ψ=%06.3f' % psi,
 #    print 'Φ=%06.3f' % phi,
