@@ -174,7 +174,7 @@ def readData():
 #    print 'Φ=%06.3f' % phi,
 #    print       # 改行.
 
-    return accel_x + "," + accel_y + "," + accel_z + "," + gyro_x + "," + gyro_y + "," + gyro_z + "," + theta + "," + psi + "," + phi
+    return str(accel_x) + "," + str(accel_y) + "," + str(accel_z) + "," + str(gyro_x) + "," + str(gyro_y) + "," + str(gyro_z) + "," + str(theta) + "," + str(psi) + "," + str(phi)
 
 if __name__ == '__main__':
     try:
