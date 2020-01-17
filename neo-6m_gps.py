@@ -7,7 +7,7 @@ firstFixDate = ""
  
 # Set up serial:
 ser = serial.Serial(
-    port='/dev/ttyACM0',\
+    port='/dev/ttyACA0',\
     baudrate=9600,\
     parity=serial.PARITY_NONE,\
     stopbits=serial.STOPBITS_ONE,\
@@ -59,7 +59,7 @@ def parse_GNGGA(data):
 # Main program roop:
 while True:
     line = ser.readline()
-    if "$GNGGA" in line: #This will exclude other NMEA sentences the GNSS provides.
+    if byte(b"$GNGGA") in line: #This will exclude other NMEA sentences the GNSS provides.
         gpsData = parse_GNGGA(line) # Turn a GNGGA sentence into a Python dictionary called gpsData
         if gpsData['quality']=="1":
             # If the sentence shows that there's a fix, then we can log the line
