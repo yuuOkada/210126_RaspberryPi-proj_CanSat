@@ -15,7 +15,6 @@ if not os.path.exists('/home/pi/FetchedData'):
 i = 0
 
 while True:
-
     now = datetime.datetime.now()
     filename = now.strftime('%Y%m%d')
     label = now.strftime('%Y.%m.%d.%H:%M:%S')
@@ -23,13 +22,10 @@ while True:
     csv = bme280_i2c_def.readData() + "," + mpu6050_def.readData() + "," + neo6m_gps3.readData()
     f = open('/home/pi/FetchedData/'+filename+'_data.csv','a')
     f.write("'"+label+"',"+csv+"\n")
+    f.close()
 
     if i%5 == 0:
         #Camera
         Cam.readData(label)
 
-    time.sleep(0.2)
-
     i = i + 1
-
-f.close()
