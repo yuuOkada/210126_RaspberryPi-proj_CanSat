@@ -73,7 +73,7 @@ def readData():
     t = compensate_T(temp_raw)
     p = compensate_P(pres_raw)
     h = compensate_H(hum_raw)
-    return p + "," + t + "," + h
+    return t + "," + h + "," + p
  
 def compensate_P(adc_P):
     global  t_fine

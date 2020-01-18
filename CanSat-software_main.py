@@ -2,15 +2,20 @@
  
 import bme280_i2c_def
 import mpu6050_def
+import Cam
 import datetime
 import time
+import picamera
 import os
  
 dir_path = '/home/pi/FetchedData'
 if not os.path.exists('/home/pi/FetchedData'):
     os.makedirs('/home/pi/FetchedData')
 
-for i in range(10):
+i = 0
+
+while True:
+
     now = datetime.datetime.now()
     filename = now.strftime('%Y%m%d')
     label = now.strftime('%Y.%m.%d.%H:%M:%S')
@@ -18,11 +23,13 @@ for i in range(10):
     csv = bme280_i2c_def.readData() + "," + mpu6050_def.readData()
     f = open('/home/pi/FetchedData/'+filename+'_data.csv','a')
     f.write("'"+label+"',"+csv+"\n")
-    #Camera
-    picname = str(label)
-    with picamera.PiCamera() as cam:
-        cam.resolution = (1600,900)
-        cam.start_preview()
-        time.sleep(0.05)
-        cam.capture('/home/pi/FetchedData/' + picname + ".jpg")
+
+    if i%5 == 0:
+        #Camera
+        Cam.readData(label)
+
+    time.sleep(0.2)
+
+    i = i + 1
+
 f.close()
