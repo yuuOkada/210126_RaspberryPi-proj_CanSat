@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 import bme280_i2c_def
 import mpu6050_def
+import neo6m_gps3
 import Cam
 import datetime
 import time
@@ -19,7 +20,7 @@ while True:
     filename = now.strftime('%Y%m%d')
     label = now.strftime('%Y.%m.%d.%H:%M:%S')
     #BME280 & MPU6050
-    csv = bme280_i2c_def.readData() + "," + mpu6050_def.readData()
+    csv = bme280_i2c_def.readData() + "," + mpu6050_def.readData() + "," + neo6m_gps3.readData()
     f = open('/home/pi/FetchedData/'+filename+'_data.csv','a')
     f.write("'"+label+"',"+csv+"\n")
 
