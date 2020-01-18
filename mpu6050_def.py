@@ -1,6 +1,4 @@
 # -*- coding: utf-8 -*-
-
-# import module
 import smbus            # use I2C
 import math             # mathmatics
 from time import sleep  # time module

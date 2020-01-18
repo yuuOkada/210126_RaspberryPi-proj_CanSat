@@ -1,5 +1,4 @@
-#coding: utf-8
- 
+# -*- coding: utf-8 -*-
 import mpu6050_def
 import datetime
 import os

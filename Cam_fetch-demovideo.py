@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 import time
 import picamera
 import numpy as np

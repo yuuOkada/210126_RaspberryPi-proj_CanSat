@@ -1,5 +1,4 @@
-#coding: utf-8
- 
+# -*- coding: utf-8 -*-
 import bme280_i2c_def
 import mpu6050_def
 import Cam
