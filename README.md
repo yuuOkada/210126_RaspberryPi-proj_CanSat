@@ -150,4 +150,6 @@
     ...
 ```
 
+* And you have to activate serial port
+
 * * *

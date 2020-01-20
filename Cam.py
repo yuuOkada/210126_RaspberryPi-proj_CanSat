@@ -1,17 +1,17 @@
 # -*- coding: utf-8 -*-
 import os
-import time
+from time import sleep
 import datetime
 import picamera
 
+#read data
 def readData(filename):
-    
+    #take picture in resolution(800,450)
     with picamera.PiCamera() as cam:
-        cam.resolution = (1600,900)
+        cam.resolution = (800,450)
         cam.start_preview()
-        time.sleep(0.05)
+        time.sleep(0.02)
         cam.capture('/home/pi/FetchedData/' + filename + ".jpg")
-
     return
 
 
