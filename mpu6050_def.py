@@ -2,7 +2,6 @@
 #import modules
 import smbus
 import math
-from time import sleep
 
 # slave address
 DEV_ADDR = 0x68         # device address

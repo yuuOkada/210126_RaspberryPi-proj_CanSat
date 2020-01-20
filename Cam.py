@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 import os
-from time import sleep
-import datetime
+import time
 import picamera
 
 #read data

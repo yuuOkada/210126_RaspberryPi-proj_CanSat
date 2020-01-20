@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
 import smbus
-from time import sleep
  
 bus_number  = 1
 i2c_address = 0x76
