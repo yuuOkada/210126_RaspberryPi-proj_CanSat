@@ -22,7 +22,7 @@ while True:
     now = datetime.datetime.now()
     #define filename from timestamp
     filename = now.strftime('%Y%m%d')
-    label = now.strftime('%Y.%m.%d.%H:%M:%S')
+    label = now.strftime('%Y.%m.%d.%H.%M.%S')
     #fetch Temp,Hum,Atm & Accelearation,Gyro & GPS data
     csv = bme280_i2c_def.readData() + "," + mpu6050_def.readData() + "," + neo6m_gps3.readData()
     #save data to a .csv file
@@ -31,7 +31,7 @@ while True:
     f.close()
 
     #take picture every 5times
-    if i%5 == 0:
+    if i%2 == 0:
         #Camera
         Cam.readData(label)
 
