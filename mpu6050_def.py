@@ -95,7 +95,11 @@ def readData():
     gravity_x,gravity_y,gravity_z = get_accel_data_g()
     accel_x,accel_y,accel_z = gravity_x*9.81, gravity_y*9.81, gravity_z*9.81
     #tilt angle by accalearation
-    theta,psi,phi = calc_slope_for_accel_3axis_deg(gravity_x,gravity_y,gravity_z)
+    theta = 0
+    psi = 0
+    phi = 0
+    if accel_x*accel_y*accel_z == 0:
+        theta,psi,phi = calc_slope_for_accel_3axis_deg(gravity_x,gravity_y,gravity_z)
     return str(accel_x) + "," + str(accel_y) + "," + str(accel_z) + "," + str(gyro_x) + "," + str(gyro_y) + "," + str(gyro_z) + "," + str(theta) + "," + str(psi) + "," + str(phi)
 
 
